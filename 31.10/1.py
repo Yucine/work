@@ -7,9 +7,8 @@ while i<=20:
         a=(random.randint(0,2))
         seriy+=a
         b =a
-        print(b)
+        print(b, end = "")
     if seriy == 12:
         i+=1
-
-        
-    
+        print("")
+    seriy=0
