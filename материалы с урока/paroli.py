@@ -2,6 +2,7 @@ a = -1
 b = 0
 c = 0
 d = 0
+e = -1
 p1 = 0
 p2 = 0
 p3 = 0
@@ -12,15 +13,19 @@ while b < 1:
     while c < 1:
         for i in parol:
             a+=1
+            e = -1
             for i in spisok:
-                if i == str(parol[a]):
+                e+=1
+                if spisok[e] == parol[a]:
                     a = 0
                     p1 = 1
                     break
         for i in parol:
             a+=1
+            e = -1
             for i in spisok1:
-                if i == str(parol[a]):
+                e+=1
+                if spisok[e] == parol[a]:
                     a = 0
                     p2 = 1
                     break
@@ -39,6 +44,4 @@ while b < 1:
                 break
         else:
             print("пароль не коректен")
-            break
-
-    
+            break                 
